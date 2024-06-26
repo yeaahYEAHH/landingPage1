@@ -1,45 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/reset.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/media.css" />
     <title>Site</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
-            <!-- header-navigate -->
-             <div class="header-nav">
-                <a href="#!" class="logo">Kelvin</a>
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li class="nav-item"><a href="!#" class="nav-link active">Home</a></li>
-                        <li class="nav-item"><a href="!#" class="nav-link">Works</a></li>
-                        <li class="nav-item"><a href="!#" class="nav-link">Services</a></li>
-                        <li class="nav-item"><a href="!#" class="nav-link">About</a></li>
-                        <li class="nav-item"><a href="!#" class="nav-link">Contact</a></li>
-                    </ul>
-                </nav>
-             </div>
+      <div class="container" data-aos="fade-right">
+        <!-- header-navigate -->
+        <div class="header-nav">
+          <a href="#!" class="logo">Kelvin</a>
+          <nav class="nav" id="nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="!#" class="nav-link active">Home</a>
+              </li>
+              <li class="nav-item"><a href="!#" class="nav-link">Works</a></li>
+              <li class="nav-item">
+                <a href="!#" class="nav-link">Services</a>
+              </li>
+              <li class="nav-item"><a href="!#" class="nav-link">About</a></li>
+              <li class="nav-item">
+                <a href="!#" class="nav-link">Contact</a>
+              </li>
+            </ul>
 
-             <!-- header-content -->
-              <div class="header-row">
-                <div class="header-content">
-                    <h1 class="header-title">Kelvin Kramer<br>Designer & Developer</h1>
-                    <p class="header-text">
-                        I’m a portrait, fashion and lifestyle photographer living In New York City. During my thirteen year tenure here.
-                    </p>
-                </div>
-
-                <div class="header-image">
-                    <img src="./img/hero.png" alt="man">
-                </div>
-              </div>
+            <button class="nav-button" id="nav-button">
+                <img src="./img/open.svg" alt="navber" id="nav-button-img" />
+            </button>
+           
+          </nav>    
         </div>
+
+        <!-- header-content -->
+        <div class="header-row">
+          <div class="header-content">
+            <h1 class="header-title">
+              Kelvin Kramer<br /><span>Designer & Developer</span>
+            </h1>
+            <p class="header-text">
+              I’m a portrait, fashion and lifestyle photographer living In New
+              York City. During my thirteen year tenure here.
+            </p>
+          </div>
+
+          <div class="header-image" data-aos="fade-up-left">
+            <picture>
+                <source media="(max-width: 780px)" srcset="./img/hero_mobile.png">
+                <img src="./img/hero.png"/>
+            </picture>
+          </div>
+        </div>
+      </div>
     </header>
 
-    
-</body>
+    <section class="service" >
+      <div class="container">
+        <div class="service-row">
+          <div class="section-card" data-aos="zoom-in-up">
+            <img
+              src="./img/design.svg"
+              alt="UI/UX Design"
+              class="service-card-img"
+            />
+            <h3 class="service-card-title">UI/UX Design</h3>
+            <p class="service-card-text">
+              Our design is translated into comprehensive digital environments
+              built on latest development standards.
+            </p>
+          </div>
+
+          <div class="section-card" data-aos="zoom-in-up">
+            <img
+              src="./img/development.svg"
+              alt="Development"
+              class="service-card-img"
+            />
+            <h3 class="service-card-title">Development</h3>
+            <p class="service-card-text">
+              Our design is translated into comprehensive digital environments
+              built on latest development standards.
+            </p>
+          </div>
+
+          <div class="section-card" data-aos="zoom-in-up">
+            <img
+              src="./img/softwaretesting.svg"
+              alt=""
+              class="service-card-img"
+            />
+            <h3 class="service-card-title">Software testing</h3>
+            <p class="service-card-text">
+              Our design is translated into comprehensive digital environments
+              built on latest development standards.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio">
+      <div class="container">
+        <h2 class="title">Portfolio</h2>
+
+        <div class="project" data-aos="flip-left">
+          <img src="./img/fashion.jpg" alt="fashionStore" class="project-img" />
+          <h3 class="project-title">
+            <a href="!#">Online fashion store - Homepage</a>
+          </h3>
+        </div>
+
+        <div class="project" data-aos="flip-left">
+          <img src="./img/reebok.jpg" alt="rebook" class="project-img" />
+          <h3 class="project-title"><a href="!#">Reebok Store - Concept</a></h3>
+        </div>
+
+        <div class="project" data-aos="flip-left">
+          <img src="./img/braun.jpg" alt="braun" class="project-img" />
+          <h3 class="project-title">
+            <a href="!#">Braun Landing Page - Concept</a>
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <footer class="contacts" data-aos="fade-up">
+      <div class="container">
+        <h2 class="title">Contacts</h2>
+
+        <p class="contacts-text">
+          Want to know more or just chat?<br />
+          You are welcome!
+        </p>
+
+        <button class="button">Send message</button>
+
+        <div class="contacts-socials">
+          <a href=""><img src="./img/LinkedIn.svg" alt="LinkedIn" /></a>
+          <a href=""><img src="./img/Instargam.svg" alt="Instargam" /></a>
+          <a href=""><img src="./img/Behance.svg" alt="Behance" /></a>
+          <a href=""><img src="./img/Dribble.svg" alt="Dribble" /></a>
+        </div>
+
+        <p class="contacts-footer">
+          Like me on<br />
+          LinkedIn, Instagram, Behance, Dribble
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>

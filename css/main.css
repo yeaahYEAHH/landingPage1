@@ -1,86 +1,194 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-body{
-    font-family: 'Poppins', sans-serif;
-    color: #000;
-    font-size: 14px;
+body {
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  font-size: 14px;
 }
 
+.title {
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1230px;
+  padding: 0 30px;
+}
+
+.button {
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    background-color: #070707;
+    margin-bottom: 80px;
+    padding: 8px 20px;
+    font-weight: 400;
+    border-radius: 30px;
+    transition: background-color .3s ease-in, top .2s ease-in-out;
+}
+
+
+.button:hover, .button:focus{
+    background-color: #343232;
+}
+
+.button:active{
+    position: relative;
+    top: 2px;
+}
 /*  (header)  */
 
-.header{
-    padding-top: 46px;
-    background-color: #F1F1F1;
+.header {
+  padding-top: 46px;
+  background-color: #f1f1f1;
 }
 
-.container{
-    max-width: 1230px;
-    padding: 0 30px;
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 76px;
 }
 
-.header-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 76px;
+.logo {
+  position: relative;
+  font-weight: bold;
+  padding: 0px 12px 3px 0px;
+  font-size: 32px;
+  color: inherit;
+  line-height: 1;
 }
 
-.logo{
-    position: relative;
-    font-weight: bold;
-    padding: 0px 12px 3px 0px;
-    font-size: 32px;
-    color: inherit;
-    line-height: 1;
+.logo::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #fda300;
+  border-radius: 100%;
 }
-
-.logo::after{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    content: "";
-    display: block;
-    width: 8px;
-    height: 8px;
-    background-color: #FDA300;
-    border-radius: 100%;
-}
-
 
 /*  (nav)  */
-
-.nav-list{
-    display: flex;
-    column-gap: 50px;
-    font-weight: medium;
+.nav-list {
+  display: flex;
+  column-gap: 50px;
+  font-weight: medium;
 }
 
-.nav-link{
-    color: inherit;
+.nav-button{
+    display: none;
+    z-index: 1;
 }
 
-.nav-link.active{
-    color: #606060;
+.nav-link {
+  color: inherit;
 }
 
+.nav-link.active {
+  color: #606060;
+}
 
 /*  (header-content)  */
 
-.header-row{
+.header-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-content {
+  margin-top: 124px;
+  max-width: 500px;
+}
+
+.header-title {
+  font-weight: 600;
+  font-size: 44px;
+}
+
+.header-text {
+  line-height: 2;
+}
+
+.service {
+  padding: 90px 0px;
+}
+
+.service-row {
+  display: flex;
+  column-gap: 30px;
+  row-gap: 60px;
+    flex-wrap: wrap;
+}
+
+.section-card {
+    max-width: 370px;
+    flex: 1 1 0;
+    min-width: 315px;   
+}
+
+.service-card-img {
+  margin-bottom: 30px;
+}
+
+.service-card-title {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service-card-text {
+  line-height: 2;
+}
+
+.portfolio {
+  background-color: #f1f1f1;
+  padding: 90px 0px;
+  text-align: center;
+}
+
+.project:nth-child(2) {
+  margin-top: 70px;
+}
+
+.project:not(:last-child) {
+  margin-bottom: 174px;
+}
+
+.project-img {
+  margin-bottom: 40px;
+}
+
+.project-title {
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.project-title > a {
+  color: inherit;
+}
+
+.contacts {
+    text-align: center;
+    padding: 90px 0px;
+}
+
+.contacts-text {
+    margin: 40px 0px;
+}
+
+.contacts-socials {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    column-gap: 50px;
+    margin-bottom: 40px;
 }
-
-.header-content{
-    margin-top: 124px;
-    max-width: 500px;
-}
-
-.header-title{
-    font-weight: 600;
-    font-size: 44px;
-}
-
-.header-text{
-    line-height: 2;
+.contacts-footer {
+    font-size: 14px;
+    color: #828282;
 }
